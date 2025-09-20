@@ -34,26 +34,26 @@ public class CardTrick {
             magicHand[i] = c;
         }
         
-        System.out.println("Hello to the game, pick a card.");
-        System.out.println("Choose number 1-13: ace=1, jack=11, queen=12, king=13");
-        System.out.println("Then choose a suit: Hearts, Clubs, Diamonds, Spades.\n");
-        System.out.print("Pick number: ");
-        int selectedNumber = scn.nextInt();
-        System.out.print("Pick suit: ");
-        scn.nextLine();
-        String selectedSuit = scn.nextLine();
-        
-        Card uc = new Card();
-        uc.setValue(selectedNumber);
-        uc.setSuit(selectedSuit);
+//        System.out.println("Hello to the game, pick a card.");
+//        System.out.println("Choose number 1-13: ace=1, jack=11, queen=12, king=13");
+//        System.out.println("Then choose a suit: Hearts, Clubs, Diamonds, Spades.\n");
+//        System.out.print("Pick number: ");
+//        int selectedNumber = scn.nextInt();
+//        System.out.print("Pick suit: ");
+//        scn.nextLine();
+//        String selectedSuit = scn.nextLine();
+//        
+//        Card uc = new Card();
+//        uc.setValue(selectedNumber);
+//        uc.setSuit(selectedSuit);
 
         Card luckyCard = new Card();
         luckyCard.setValue(6);
         luckyCard.setSuit("Hearts");
         
         for (int j = 0; j < magicHand.length; j++){
-            if(uc.getValue() == magicHand[j].getValue()){
-                if (uc.getSuit().equals(magicHand[j].getSuit())){
+            if(luckyCard.getValue() == magicHand[j].getValue()){
+                if (luckyCard.getSuit().equals(magicHand[j].getSuit())){
                     System.out.println("Your Card was found.");
                     return;
                 }
