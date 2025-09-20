@@ -12,6 +12,8 @@ package card;
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
  * @author srinivsi
+ * @modifier Sabestian Lucian - 991726319 - https://github.com/shane52lucian/software_fundamentals_ice.git
+
  */
 public class Card {
 
