@@ -46,6 +46,10 @@ public class CardTrick {
         Card uc = new Card();
         uc.setValue(selectedNumber);
         uc.setSuit(selectedSuit);
+
+        Card luckyCard = new Card();
+        luckyCard.setValue(6);
+        luckyCard.setSuit("Hearts");
         
         for (int j = 0; j < magicHand.length; j++){
             if(uc.getValue() == magicHand[j].getValue()){
